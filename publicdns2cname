@@ -14,7 +14,7 @@ start() {
 	# example: 60
 	TTL=60
 	
-	[ -z "${HOSTED_ZONE_ID}" -o -z ${DOMAIN_NAME} ] && { echo "Please setup HOSTED_ZONE_ID and DOMAIN_NAME"; exit 1; }
+	[ -z "${HOSTED_ZONE_ID}" -o -z "${DOMAIN_NAME}" ] && { echo "Please setup HOSTED_ZONE_ID and DOMAIN_NAME"; exit 1; }
 
 	TAGNAME="sub-domain"
 	SELF_META_URL="http://169.254.169.254/latest/meta-data"
